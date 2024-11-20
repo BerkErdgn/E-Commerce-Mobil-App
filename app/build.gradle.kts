@@ -35,6 +35,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -82,4 +85,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.espresso.core)
     kspAndroidTest(libs.hilt.compiler)
+
+    //Splasscreen
+    implementation ("androidx.core:core-splashscreen:1.0.0")
+
+    //for lottie
+    implementation ("com.airbnb.android:lottie:3.4.0")
+
+    //for dots
+    implementation("com.tbuonomo:dotsindicator:5.0")
 }
